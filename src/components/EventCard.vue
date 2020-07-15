@@ -1,12 +1,19 @@
 <template>
-  <router-link
-    class="event-link"
-    :to="{ name: 'event-show', params: { id: event.id } }"
-  >
+  <!-- 
+  <router-link class="event-link" :to="{ name: 'event-show', params: { id: event.id } }">
     <div class="event-card -shadow">
-      <span class="eyebrow">@{{ event.time }} on {{ event.date }}</span>
-      <h4 class="title">{{ event.title }}</h4>
-      <BaseIcon name="users">{{ event.attendees.length }} attending</BaseIcon>
+      <span class="eyebrow">{{ event.stockname }}</span>
+    </div>
+  </router-link>
+  -->
+  <router-link class="event-link" :to="{ name: 'event-show', params: { id: event.id } }">
+    <div class="event-card -shadow">
+      <span class="eyebrow">{{ event.stockname }}</span>
+      <p>
+        <a :href="event.spreadshirtlink" target="_blank">
+          <img :src="'src/assets/' + 'codesydney-mens-t-shirt.jpg'" width="200" height="400" />
+        </a>
+      </p>
     </div>
   </router-link>
 </template>

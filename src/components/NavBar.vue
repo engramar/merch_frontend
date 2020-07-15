@@ -1,9 +1,9 @@
 <template>
   <div id="nav" class="nav">
-    <router-link to="/" class="brand">Real World Events</router-link>
+    <router-link to="/" class="brand">Code.Sydney</router-link>
     <nav>
-      <router-link :to="{ name: 'event-list' }">List</router-link> |
-      <router-link :to="{ name: 'event-create' }">Create</router-link>
+      <router-link :to="{ name: 'event-list' }">Home</router-link>|
+      <router-link :to="{ name: 'event-create' }">About</router-link>
     </nav>
   </div>
 </template>
@@ -23,7 +23,7 @@ export default {};
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.5em;
-  color: #39b982;
+  color: #53708b;
   text-decoration: none;
 }
 .nav .nav-item {
@@ -33,7 +33,7 @@ export default {};
   text-decoration: none;
 }
 .nav .nav-item.router-link-exact-active {
-  color: #39b982;
-  border-bottom: solid 2px #39b982;
+  color: #53708b;
+  border-bottom: solid 2px #53708b;
 }
 </style>
