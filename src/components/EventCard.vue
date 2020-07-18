@@ -1,21 +1,13 @@
 <template>
-  <!-- 
-  <router-link class="event-link" :to="{ name: 'event-show', params: { id: event.id } }">
-    <div class="event-card -shadow">
-      <span class="eyebrow">{{ event.stockname }}</span>
-    </div>
-  </router-link>
-  -->
-  <router-link class="event-link" :to="{ name: 'event-show', params: { id: event.id } }">
-    <div class="event-card -shadow">
-      <span class="eyebrow">{{ event.stockname }}</span>
-      <p>
-        <a :href="event.spreadshirtlink" target="_blank">
-          <img :src="'src/assets/' + 'codesydney-mens-t-shirt.jpg'" width="200" height="400" />
-        </a>
-      </p>
-    </div>
-  </router-link>
+  <div class="event-card -shadow">
+    <span class="title">{{ event.stockname }}</span>
+    <br />
+    <span class="eyebrow">
+      <a :href="`${event.spreadshirtlink}`" target="_blank">
+        <img :src="require(`@/assets/${event.imagename}`)" alt class="icon" />
+      </a>
+    </span>
+  </div>
 </template>
 
 <script>
@@ -39,6 +31,11 @@ export default {
 }
 .event-card > .title {
   margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #133352;
+  text-decoration: none;
 }
 .event-link {
   color: black;

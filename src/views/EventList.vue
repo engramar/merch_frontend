@@ -1,6 +1,6 @@
 <template>
   <div class="event-header">
-    <h1 class="title">Merch</h1>
+    <h1>Merch</h1>
     <EventCard v-for="event in events" :key="event.id" :event="event" />
   </div>
 </template>
@@ -34,7 +34,12 @@ export default {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2.5em;
-  color: #53708b;
+  color: #245e94;
+  text-align: center;
   text-decoration: none;
+}
+.event-header > h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #1b4c79;
 }
 </style>

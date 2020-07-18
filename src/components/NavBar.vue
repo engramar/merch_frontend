@@ -1,10 +1,8 @@
 <template>
   <div id="nav" class="nav">
-    <router-link to="/" class="brand">Code.Sydney</router-link>
-    <nav>
-      <router-link :to="{ name: 'event-list' }">Home</router-link>|
-      <router-link :to="{ name: 'event-create' }">About</router-link>
-    </nav>
+    <!--
+    <img :src="require(`@/assets/cs_logo.png`)" height="100px" width="50px" />
+    -->
   </div>
 </template>
 
@@ -17,7 +15,7 @@ export default {};
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 10px;
 }
 .nav > .brand {
   font-family: "Montserrat", sans-serif;
@@ -28,7 +26,7 @@ export default {};
 }
 .nav .nav-item {
   box-sizing: border-box;
-  margin: 0 5px;
+  margin: 5 10px;
   color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
