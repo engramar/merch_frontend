@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: `http://127.0.0.1:5000`,
+  baseURL: `http://merch.pythonanywhere.com/`,
   withCredentials: false, // This is the default
   headers: {
     Accept: "application/json",

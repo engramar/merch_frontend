@@ -1,6 +1,13 @@
 <template>
   <div class="event-header">
     <h1>Merch</h1>
+    <h5>All profits go to the following:</h5>
+    <ul>
+      <li>80% Community Fund</li>
+      <li>10% freeCodeCamp.org</li>
+      <li>5% Mentors Fund</li>
+      <li>5% Code.Sydney's Opex</li>
+    </ul>
     <EventCard v-for="event in events" :key="event.id" :event="event" />
   </div>
 </template>
@@ -39,6 +46,17 @@ export default {
   text-decoration: none;
 }
 .event-header > h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #1b4c79;
+}
+
+.event-header > h5 {
+  font-family: "Montserrat", sans-serif;
+  color: #1b4c79;
+  margin-bottom: 1px;
+}
+
+.event-header > ul {
   font-family: "Montserrat", sans-serif;
   color: #1b4c79;
 }
